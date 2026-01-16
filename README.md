@@ -9,18 +9,22 @@ Quelles sont les principales distributions de la famille Debian, de la famille R
 
 Comment pourriez-vous décrire, succintement, leurs positionnements respectifs ? Les différences au niveau des outils d'admnistration ?
 
-> La famille Debian a comme principales distributions une qui est éponyme, ainsi que d'autres très connues comme Ubuntu et Linux Mint. Ils se focalisent principalement sur le concept de logiciels libres: "We want to create a free operating system, freely available for everyone." Les outils administratifs principaux de cette famille sont apt/dpkg (gestion de paquets) et GNOME.
-> 
-> La famille Red Hat a comme principales distributions Red Hat Linux, son successeur spirituel Fedora, et CentOS. Ils se focalisent principalement sur la stabilité. Les outils administratifs principaux de cette famille sont dnf/rpm (gestion de paquets) et Cockpit.
-> 
-> Une autre distribution populaire est openSUSE. Elle se focalise sur accorder aux utilisateurs le plus de choix possible et la transparence. Les outils administratifs principaux de cette famille sont zypper/rpg (gestion de paquets) et YaST.
+~~~~
+La famille Debian a comme principales distributions une qui est éponyme, ainsi que d'autres très connues comme Ubuntu et Linux Mint. Ils se focalisent principalement sur le concept de logiciels libres: "We want to create a free operating system, freely available for everyone." Les outils administratifs principaux de cette famille sont apt/dpkg (gestion de paquets) et GNOME.
+
+La famille Red Hat a comme principales distributions Red Hat Linux, son successeur spirituel Fedora, et CentOS. Ils se focalisent principalement sur la stabilité. Les outils administratifs principaux de cette famille sont dnf/rpm (gestion de paquets) et Cockpit.
+
+Une autre distribution populaire est openSUSE. Elle se focalise sur accorder aux utilisateurs le plus de choix possible et la transparence. Les outils administratifs principaux de cette famille sont zypper/rpg (gestion de paquets) et YaST.
+~~~~
 
 ## Back to basics 
 
 Quelle est la différence fondamentale entre du code qui tourne en mode kernel/superviseur et en mode utilisateur ?
 
-> Le mode utilisateur est restreint en ce qu'il peut faire, notamment quand à son accès au CPU et à la mémoire. Tout code tournant en mode utilisateur passe quand même par le Kernel pour être exécuté, un peu comme s'il était surveillé par celui-ci.
-> Du code tournant en mode Kernel a essentiellement tous les droits possibles. Il peut tout effectuer.
+~~~~
+Le mode utilisateur est restreint en ce qu'il peut faire, notamment quand à son accès au CPU et à la mémoire. Tout code tournant en mode utilisateur passe quand même par le Kernel pour être exécuté, un peu comme s'il était surveillé par celui-ci.
+Du code tournant en mode Kernel a essentiellement tous les droits possibles. Il peut tout effectuer.
+~~~~
 
 ## Qui est où ?
 
@@ -47,8 +51,9 @@ Comment retrouver, sous GNU/Linux :
 
 Comment fonctionne en pratique WSL _(Windows Subsystem for Linux)_ ? Que permet-il de faire ? Quels protocoles utilise-t-il ?
 
-> En pratique, WSL2 (la dernière version) fait tourner un noyau Linux dans une machine virtuelle légère et gère aussi la communication entre cette VM et le reste de l'environnement Windows. Ceci permet d'installer des distributions Linux, d'utiliser des services, serveurs et outils graphiques Linux localement sur Windows, d'executer des scripts Bash et d'accéder aux fichiers Windows depuis Linux.
-> Les protocoles utilisés pour la communications entre les deux sont 9P, VSOCK, TCP/IP (NAT) et RDP.
+~~~~
+En pratique, WSL2 (la dernière version) fait tourner un noyau Linux dans une machine virtuelle légère et gère aussi la communication entre cette VM et le reste de l'environnement Windows. Ceci permet d'installer des distributions Linux, d'utiliser des services, serveurs et outils graphiques Linux localement sur Windows, d'executer des scripts Bash et d'accéder aux fichiers Windows depuis Linux.
+Les protocoles utilisés pour la communications entre les deux sont 9P, VSOCK, TCP/IP (NAT) et RDP.
 ~~~~
 
 ## On commence
@@ -60,7 +65,8 @@ Vous venez d'installer un système GNU/Linux que faites-vous pour en sécuriser 
 Vous vous connectez à un système GNU/Linux, le client ssh vous averti qu'il a un problème de reconnaissance de sa clef publique
 d'hôte. Que faites-vous ? Pourquoi ?
 
->
+~~~~
+~~~~
 
 ## Oh les gourmands !
 
