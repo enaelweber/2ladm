@@ -206,17 +206,20 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 sudo apt-get update && sudo apt-get install elasticsearch
 ~~~~
 
-
-
-
 ## Le Web
 
 Vous avez la charge de gérer un serveur Web sous Debian GNU/Linux, pour héberger plusieurs sites Web (hébergement mutualisé).
 
-- Quels paquets installez-vous ?
-- Comment organisez sous le stockage des différents contenus ?
-- Certains sites ont besoin de PHP, comment l'installez-vous ?
+- Quels paquets installez-vous ? 
+- - `apache2, apache2-utils`
+- Comment organisez sous le stockage des différents contenus ? 
+- - `Dans /var/www/ des répertoires nomdusite.com/ pour chaque site, et dans chaque répertoire, un répertoire public_html/ et un répertoire logs/`
+- Certains sites ont besoin de PHP, comment l'installez-vous ? 
+- - `sudo apt install php libapache2-mod-php php-cli`
+- - `sudo a2enmod php8.4`
+- - `sudo systemctl restart apache2`
 - Comment pouvez-vous organiser l'enregistrement séparé des visites des différents sites ?
+- - `Set up un fichier virtual host par site dans /etc/apache2/sites-available/`
 - Quel(s) outil(s) peuvent vous permettre de fournir une vison des visites de chaque site à chaque Webmaster ?
-
+- - `AWStats, Webalizer`
 
