@@ -74,6 +74,10 @@ Comment identifier rapidement, avec une seule ligne de commande, les utilisateur
 
 _N.B._ Vous pouvez supposer que les répertoires personnels sont tous des sous-répertoires de `/home` 
 
+~~~~
+du -sh /home/* 2>/dev/null | sort -hr
+~~~~
+
 ## On va aider les devs...
 
 Une équipe de développeur.se.s vous demande de préparer un système GNU/Linux pour du développent système (C, make, etc.)
