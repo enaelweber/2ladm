@@ -21,11 +21,16 @@ Une autre distribution populaire est openSUSE. Elle se focalise sur accorder aux
 
 Quelle est la différence fondamentale entre du code qui tourne en mode kernel/superviseur et en mode utilisateur ?
 
+~~~~
+Le mode utilisateur est restreint en ce qu'il peut faire, notamment quand à son accès au CPU et à la mémoire. Tout code tournant en mode utilisateur passe quand même par le Kernel pour être exécuté, un peu comme s'il était surveillé par celui-ci.
+Du code tournant en mode Kernel a essentiellement tous les droits possibles. Il peut tout effectuer.
+~~~~
+
 ## Qui est où ?
 
 Indiquez, en quelques mots, pour ces répertoires, ce qu'ils sont supposés contenir :
 
-- /etc: `Stocke des fichiers divers comme ceux de configuration réseaux.`
+- /etc: 
 - /bin et /usr/bin
 - /sbin et /usr/sbin
 - /home
