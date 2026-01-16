@@ -30,13 +30,13 @@ Du code tournant en mode Kernel a essentiellement tous les droits possibles. Il 
 
 Indiquez, en quelques mots, pour ces répertoires, ce qu'ils sont supposés contenir :
 
-- /etc: 
-- /bin et /usr/bin
-- /sbin et /usr/sbin
-- /home
-- /var
-- /var/log
-- /var/lib
+- /etc : `Stocke des fichiers divers de configuration système.`
+- /bin et /usr/bin : `Contient des fichiers executables (binaries), /bin pour des fichiers faisant partie du noyau de l'OS, /usr/bin les executables pour les utilisateurs de cette OS (system wide).`
+- /sbin et /usr/sbin : `Similaire à /bin et /usr/bin, mais pour des executables nécessitant la permission root.`
+- /home : `Répertoire personnel d'un utilisateur.`
+- /var : `Stocke des données variables (qui peuvent/vont changer).`
+- /var/log : `Stocke des logs d'applications.`
+- /var/lib : `Stocke des données importantes et persistantes (mais qui peuvent changer) de programmes.`
 
 ## Où est le pilote ?
 
