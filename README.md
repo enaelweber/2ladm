@@ -157,12 +157,12 @@ df -h
 
 Sur un serveur GNU/Linux qui démarre via _systemd_, un service nommé _bidule_, comment :
 
-- Savoir si le service est lancé au démarrage automatiquement
-- Savoir s'il est en cours de fonctionnement
-- Faire en sorte qu'il le soit
-- Examiner les messages qu'il émet
-- Le redémarrer
-- Déterminer de quel paquet (Debian ou Red Hat) il provient
+- Savoir si le service est lancé au démarrage automatiquement : `systemctl is-enabled bidule`
+- Savoir s'il est en cours de fonctionnement : `systemctl is-active bidule`
+- Faire en sorte qu'il le soit : `sudo systemctl start bidule`
+- Examiner les messages qu'il émet : `journalctl -u bidule`
+- Le redémarrer : `sudo systemctl restart bidule`
+- Déterminer de quel paquet (Debian ou Red Hat) il provient : `dpkg -S /usr/bin/bidule` (Debian) `rpm -qf /usr/sbin/bidule` (Red Hat)
 
 ## Zut
 
