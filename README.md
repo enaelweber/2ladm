@@ -191,6 +191,24 @@ On vous demande d'installer un serveur de base de données _Elastic_ (autrefois 
 
 Décrivez votre recherche documentaire, la méthode que vous sélectionnez, les commandes que vous exécutez et les fichiers de configuration impliqués.
 
+### Réponse
+
+Je commence par regarder la documentation a : https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
+Et je suis les étapes 1 à 1
+~~~~
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+~~~~
+
+Je décide d'installer à partir du répertoire APT
+~~~~
+sudo apt-get install apt-transport-https
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/9.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-9.x.list
+sudo apt-get update && sudo apt-get install elasticsearch
+~~~~
+
+
+
+
 ## Le Web
 
 Vous avez la charge de gérer un serveur Web sous Debian GNU/Linux, pour héberger plusieurs sites Web (hébergement mutualisé).
