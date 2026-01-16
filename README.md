@@ -168,6 +168,19 @@ Sur un serveur GNU/Linux qui démarre via _systemd_, un service nommé _bidule_,
 
 Vous devez reprendre la main, en tant qu'administrateur, d'un système GNU/Linux mais vous n'avez aucun mot de passe à votre disposition, ni _root_ ni utilisateur. Que pouvez-vous faire ?
 
+~~~~
+Redémarre
+On interrompt GRUB en appuyant sur une touche
+On sélectionne l'entrée de menu qu'on veut démarrer (la première)
+On appuie sur 'e' (edit)
+On se déplace jusqu'à la ligne "linux ..."
+On ajoute à la fin de la ligne init=/bin/bash et on boot cette configuration (ctrl+X ou F10)
+On remonte la racine en écriture : "mount -o remount,rw /"
+On répare : par exemple : passwd root
+On ne peut rebooter de façon normale : "mount -o remount,ro /"
+Extinction/reboot hardware
+~~~~
+
 ## C'est la faute à Rémy
 
 Un service réseau http(s) ne fonctionne plus. Vous avez accès à ce système comme administrateur.trice. Quels outils utilisez-vous pour diagnostiquer le problème, indiquez précisément ce que chaque outil permet de vérifier.
