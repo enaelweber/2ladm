@@ -51,6 +51,11 @@ Comment retrouver, sous GNU/Linux :
 
 Comment fonctionne en pratique WSL _(Windows Subsystem for Linux)_ ? Que permet-il de faire ? Quels protocoles utilise-t-il ?
 
+~~~~
+En pratique, WSL2 (la dernière version) fait tourner un noyau Linux dans une machine virtuelle légère et gère aussi la communication entre cette VM et le reste de l'environnement Windows. Ceci permet d'installer des distributions Linux, d'utiliser des services, serveurs et outils graphiques Linux localement sur Windows, d'executer des scripts Bash et d'accéder aux fichiers Windows depuis Linux.
+Les protocoles utilisés pour la communications entre les deux sont 9P, VSOCK, TCP/IP (NAT) et RDP.
+~~~~
+
 ## On commence
 
 Vous venez d'installer un système GNU/Linux que faites-vous pour en sécuriser les accès via SSH ?
