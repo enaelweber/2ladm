@@ -87,6 +87,44 @@ Que faites-vous en pratique en tant qu'administrateur.trice pour commencer ?
 - Sur une distribution de la famille Debian
 - Sur une distribution de la famille Red Hat
 
+### Distribution Debian
+
+~~~~
+sudo apt update
+sudo apt upgrade 
+sudo apt install build-essential git vim cmake
+sudo groupadd dev -g 5001
+sudo useradd -m -c "Dev1" -G dev dev1
+sudo useradd -m -c "Dev2" -G dev dev2
+sudo passwd dev1 
+sudo passwd dev2
+sudo chsh -s /bin/bash dev1
+sudo chsh -s /bin/bash dev2
+sudo mkdir /srv/devteam
+sudo chgrp dev /srv/devteam
+sudo chmod g=rwx /srv/devteam
+sudo chmod g+s /srv/devteam
+~~~~
+
+### Distribution Red Hat
+
+~~~~
+sudo dnf update
+sudo dnf groupinstall "Development Tools"
+sudo dnf install git vim cmake
+sudo groupadd -g 5001 dev
+sudo useradd -m -c "Dev1" -G dev -s /bin/bash dev1
+sudo useradd -m -c "Dev2" -G dev -s /bin/bash dev2
+sudo passwd dev1
+sudo passwd dev2
+sudo chsh -s /bin/bash dev1
+sudo chsh -s /bin/bash dev2
+sudo mkdir /srv/devteam
+sudo chgrp dev /srv/devteam
+sudo chmod g=rwx /srv/devteam
+sudo chmod g+s /srv/devteam
+~~~~
+
 ## Qui fait quoi ?
 
 Comment pourriez-vous retrouver la liste des dernières connexions d'utilisateurs à un système GNU/Linux, autant à distance que localement ?
