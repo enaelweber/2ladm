@@ -60,13 +60,33 @@ Les protocoles utilisés pour la communications entre les deux sont 9P, VSOCK, T
 
 Vous venez d'installer un système GNU/Linux que faites-vous pour en sécuriser les accès via SSH ?
 
+### Réponse
+
+J'installe openssh
+~~~~
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+~~~~
+J'ouvre le fichier de configuration SSH.
+~~~~
+sudo vim /etc/ssh/sshd_config
+~~~~
+Je désactive la connexion root: `PermitRootLogin no`
+Je force la connexion par clef `PasswordAuthentication no` `PubkeyAuthentication yes`
+
+
 ## Alerte !
 
 Vous vous connectez à un système GNU/Linux, le client ssh vous averti qu'il a un problème de reconnaissance de sa clef publique
 d'hôte. Que faites-vous ? Pourquoi ?
 
-~~~~
-~~~~
+### Réponse
+
+1. Je vérifie l'empreinte du serveur et confirme que le changement est normal car cela pourrait être une tentative d'attaque.
+2. Si le changement est normal, je supprime l'entrée précédente `ssh-keygen -R nom_du_serveur` et je me reconnecte en acceptant la nouvelle clé.
+3. Sinon, je fais pars du problème/je cherche la cause du changement.
+
 
 ## Oh les gourmands !
 
