@@ -9,6 +9,14 @@ Quelles sont les principales distributions de la famille Debian, de la famille R
 
 Comment pourriez-vous décrire, succintement, leurs positionnements respectifs ? Les différences au niveau des outils d'admnistration ?
 
+~~~~
+La famille Debian a comme principales distributions une qui est éponyme, ainsi que d'autres très connues comme Ubuntu et Linux Mint. Ils se focalisent principalement sur le concept de logiciels libres: "We want to create a free operating system, freely available for everyone." Les outils administratifs principaux de cette famille sont apt/dpkg (gestion de paquets) et GNOME.
+
+La famille Red Hat a comme principales distributions Red Hat Linux, son successeur spirituel Fedora, et CentOS. Ils se focalisent principalement sur la stabilité. Les outils administratifs principaux de cette famille sont dnf/rpm (gestion de paquets) et Cockpit.
+
+Une autre distribution populaire est openSUSE. Elle se focalise sur accorder aux utilisateurs le plus de choix possible et la transparence. Les outils administratifs principaux de cette famille sont zypper/rpg (gestion de paquets) et YaST.
+~~~~
+
 ## Back to basics 
 
 Quelle est la différence fondamentale entre du code qui tourne en mode kernel/superviseur et en mode utilisateur ?
@@ -17,7 +25,7 @@ Quelle est la différence fondamentale entre du code qui tourne en mode kernel/s
 
 Indiquez, en quelques mots, pour ces répertoires, ce qu'ils sont supposés contenir :
 
-- /etc
+- /etc: `Stocke des fichiers divers comme ceux de configuration réseaux.`
 - /bin et /usr/bin
 - /sbin et /usr/sbin
 - /home
