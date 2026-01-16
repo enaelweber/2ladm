@@ -42,10 +42,10 @@ Indiquez, en quelques mots, pour ces répertoires, ce qu'ils sont supposés cont
 
 Comment retrouver, sous GNU/Linux :
 
-- La liste des pilotes chargées en mémoire ?
-- La liste des fichiers binaires _(modules)_ qui les fournissent ?
-- Forcer leur chargement et leur déchargement ?
-- Les messages qu'ils ont émis ?
+- La liste des pilotes chargées en mémoire ? `lsmod`
+- La liste des fichiers binaires _(modules)_ qui les fournissent ? `modinfo [modulename]` 
+- Forcer leur chargement et leur déchargement ? `sudo modprobe [modulename]` (pour le chargement) `sudo modprobe -r [modulename]` (pour le déchargement) 
+- Les messages qu'ils ont émis ? `dmesg`
 
 ## MS Windows
 
