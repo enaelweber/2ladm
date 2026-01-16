@@ -129,7 +129,15 @@ sudo chmod g+s /srv/devteam
 
 Comment pourriez-vous retrouver la liste des dernières connexions d'utilisateurs à un système GNU/Linux, autant à distance que localement ?
 
+~~~~
+last
+~~~~
+
 Comment identifier les sessions où un.e utilisateur.trice à utilisé _sudo_ pour avoir les droit d'administration ?
+
+~~~~
+journalctl _COMM=sudo
+~~~~
 
 ## Post mortem
 
