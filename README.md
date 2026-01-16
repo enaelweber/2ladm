@@ -3,6 +3,8 @@
 Attendu : une url menant à un fichier README.md (format _markdown_) sur une plateforme GIT publique _(codeberg, gitlab, github, ...)_.
 reprenant ce document en le complétant.
 
+Enaël WEBER
+
 ## Les deux familles
 
 Quelles sont les principales distributions de la famille Debian, de la famille Red Hat, et les autres ?
@@ -204,6 +206,14 @@ Extinction/reboot hardware
 ## C'est la faute à Rémy
 
 Un service réseau http(s) ne fonctionne plus. Vous avez accès à ce système comme administrateur.trice. Quels outils utilisez-vous pour diagnostiquer le problème, indiquez précisément ce que chaque outil permet de vérifier.
+
+~~~~
+ping : Vérifie la résolution DNS
+ip a, ip route : Vérifie l'adresse ip configurée, la passerelle par défaut et l'interface réseau active.
+dig : Vérifie que le nom de domaine pointe vers la bonne IP.
+curl : Vérifie la réponse http
+systemctl status : Vérifie que le service est démarré.
+~~~~
 
 ## Au charbon !
 
