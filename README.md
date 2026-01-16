@@ -143,6 +143,16 @@ journalctl _COMM=sudo
 
 Le système que vous administrez est tombé cette nuit. Comment récupérer des informations sur ce qui s'est passé ?
 
+~~~~
+last reboot
+journalctl -b -1
+journalctl -k -b -1
+less /var/log/syslog
+systemctl --failed
+journalctl -u service -b -1
+df -h
+~~~~
+
 ## On surveille...
 
 Sur un serveur GNU/Linux qui démarre via _systemd_, un service nommé _bidule_, comment :
